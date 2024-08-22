@@ -1,5 +1,75 @@
-h1 {
-    color: blue;
-    font-family: Arial, sans-serif;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 80px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 16px 4px; 
+}
+
+.header_container {
+    width: 1199px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 38px;
+    object-fit: cover;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+.menu_item {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.button {
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #2752E7;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 10px;
 }
