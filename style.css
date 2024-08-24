@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "YukitaSans";
+    src: url('asset/font/YukitaSans/YukitaSans-Medium.otf') format('opentype');
+    font-style: normal;
+    font-weight: 300 700;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -166,4 +173,83 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     color: #626262;
     text-align: center;
+}
+
+.footer {
+    padding: 40px 10px;
+}
+.footer_container {
+    background-color: #2752E7;
+    margin: 0px auto;
+    max-width: 1199px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 20px;
+    padding: 40px 10px;
+}
+.footer_menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 28px;
+    padding: 30px 0;
+    width: 100%;
+}
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer_column-heading {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+.footer_list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.footer_item {
+    text-decoration: none;
+}
+.footer_item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
+.footer_divider {
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+}
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 28px;
+}
+.footer_heading {
+    font-size: 19px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 30px;
+}
+.footer_logo {
+    width: auto;
+    height: 45px;
+    object-fit: contain;
+}
+.footer_text {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
 }
