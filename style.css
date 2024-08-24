@@ -73,3 +73,9 @@
     padding: 12px 24px;
     border-radius: 10px;
 }
+
+.hero {
+    background-color: #2752E7;
+    min-height: 700px;
+    
+}
