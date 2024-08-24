@@ -4,6 +4,20 @@
     border: 0;
     box-sizing: border-box;
 }
+p, a, button {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "YukitaSans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
 
 .header {
     height: 80px;
@@ -49,6 +63,10 @@
     text-transform: capitalize;
     list-style-type: none;
 }
+.menu_item a {
+    text-decoration: none;
+    color: #2C3131
+}
 
 .link {
     text-decoration: none;
@@ -78,7 +96,6 @@
     background-color: #2752E7;
     min-height: 700px; 
 }
-
 
 .partners {
     background-color: #fff;
