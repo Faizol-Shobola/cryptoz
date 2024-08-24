@@ -3,9 +3,22 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-  }
-  
-  .header {
+}
+p, a, button {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "YukitaSans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.header {
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -52,9 +65,13 @@
     font-weight: 400;
     text-transform: capitalize;
     list-style-type: none;
-  }
-  
-  .link {
+}
+.menu_item a {
+    text-decoration: none;
+    color: #2C3131
+}
+
+.link {
     text-decoration: none;
     text-transform: capitalize;
     color: #000;
@@ -76,8 +93,83 @@
     font-size: 16px;
     padding: 12px 24px;
     border-radius: 10px;
+}
+
+.hero {
+    background-color: #2752E7;
+    min-height: 700px; 
+}
+
+.partners {
+    background-color: #fff;
+}
+.partners_container {
+    margin: 0px auto;
+    width: 1199px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}   
+.partners {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+.partner {
+    width: auto;
+    height: 30px;
+    object-fit: contain;
+}
+.partner img {
+    object-fit: contain;
+}
+.stats_container {
+    margin: 50px auto;
+    max-width: 1199px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #E3E3E3;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.stat_group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex: 1 1 25%;
+    padding: 5px;
+}
+.stat_group:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    width: 1px;
+    height: 100%;
+    background-color: #E3E3E3;
   }
   
+.stat_heading {
+    font-size: 48px;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+}
+.stat_text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #626262;
+    text-align: center;
+}
   .hero {
     background-image: linear-gradient(to right, #2752e7, #0b2271);
     min-height: 600px;
@@ -234,4 +326,3 @@
     gap: 10px;
     padding: 10px;
   }
-  

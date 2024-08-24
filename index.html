@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>My First Web Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="asset/font/YukitaSans/YukitaSans-Regular.otf">
+    <link rel="stylesheet" type="text/css" href="asset/font/YukitaSans/YukitaSans-Bold.otf">
+</head>
+<body>
     <header class="header">
-      <div class="container header_container">
-        <div class="logo_container">
-          <img class="logo" src="asset/Logo.png" alt="" />
-        </div>
-        <div class="menu_container">
-          <ul class="menu">
-            <li class="menu_item">products</li>
-            <li class="menu_item">price</li>
-            <li class="menu_item">learn</li>
-            <li class="menu_item">support</li>
-          </ul>
-        </div>
-        <div class="button_container">
-          <a class="link" href="">sign in</a>
-          <button class="button">get started</button>
+        <div class="header_container">
+            <div class="logo_container">
+                <img class="logo" src="asset/Logo.png" alt="">
+            </div>
+            <div class="menu_container">
+                <ul class="menu">
+                    <li class="menu_item"><a href="#">products</a></li>
+                    <li class="menu_item"><a href="#">price</a></li>
+                    <li class="menu_item"><a href="#">learn</a></li>
+                    <li class="menu_item"><a href="#">support</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="button_container">
+                <a class="link" href="">sign in</a>
+                <button class="button">get started</button>
+            </div>
         </div>
       </div>
     </header>
+    <section class="hero">   
+    </section>
     <section class="hero">
       <img class="floating_img_1" src="asset/Coin/BitCoin/Cam2.png" />
       <img class="floating_img_2" src="asset/Coin/Ethereum/Cam1.png" />
@@ -82,6 +91,43 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="patrners">
+        <div class="container partners_container">
+            <div class="partners">
+                <div class="partner">
+                    <img src="asset/partners/binance logo.png" alt="">
+                </div>
+                <div class="partner">
+                    <img src="asset/partners/coinbase logo.png" alt="">
+                </div>
+                <div class="partner">
+                    <img src="asset/partners/bitcoin logo.png" alt="">
+                </div>
+                <div class="partner">
+                    <img src="asset/partners/tether logo.png" alt="">
+                </div>
+                <div class="partner">
+                    <img src="asset/partners/bitmex logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stats">
+        <div class="stats_container">
+            <div class="stat_group">
+                <h2 class="stat_heading">99k</h2>
+                <p class="stat_text">People have joined</p>
+            </div>
+            <div class="stat_group">
+                <h2 class="stat_heading">50k</h2>
+                <p class="stat_text">VVIP users have joined</p>
+            </div>
+            <div class="stat_group">
+                <h2 class="stat_heading">100+</h2>
+                <p class="stat_text">Big Companies have joined</p>
+            </div>
+        </div>
     </section>
   </body>
 </html>
