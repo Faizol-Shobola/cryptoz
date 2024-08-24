@@ -107,3 +107,46 @@
 .partner img {
     object-fit: contain;
 }
+.stats_container {
+    margin: 50px auto;
+    max-width: 1199px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #E3E3E3;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.stat_group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex: 1 1 25%;
+    padding: 5px;
+}
+.stat_group:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    width: 1px;
+    height: 100%;
+    background-color: #E3E3E3;
+  }
+  
+.stat_heading {
+    font-size: 48px;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+}
+.stat_text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #626262;
+    text-align: center;
+}
