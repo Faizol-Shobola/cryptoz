@@ -76,6 +76,34 @@
 
 .hero {
     background-color: #2752E7;
-    min-height: 700px;
-    
+    min-height: 700px; 
+}
+
+
+.partners {
+    background-color: #fff;
+}
+.partners_container {
+    margin: 0px auto;
+    width: 1199px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}   
+.partners {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+.partner {
+    width: auto;
+    height: 30px;
+    object-fit: contain;
+}
+.partner img {
+    object-fit: contain;
 }
