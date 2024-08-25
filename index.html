@@ -6,129 +6,168 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Crypto Currency Landing Page</title>
+    <title>CryptoZ - Currency Landing Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="asset/font/YukitaSans/YukitaSans-Regular.otf">
     <link rel="stylesheet" type="text/css" href="asset/font/YukitaSans/YukitaSans-Medium.otf">
 </head>
 <body>
+    <!---------------------------
+    // HEADER SECTION
+    ----------------------------->
+    <!-- Header section -->
     <header class="header">
         <div class="container header_container">
+            <!-- Logo container -->
             <div class="logo_container">
                 <img class="logo" src="asset/Logo.png" alt="">
             </div>
+            <!-- Menu container -->
             <div class="menu_container">
                 <ul class="menu">
+                    <!-- Menu items -->
                     <li class="menu_item"><a href="#">products</a></li>
                     <li class="menu_item"><a href="#">price</a></li>
                     <li class="menu_item"><a href="#">learn</a></li>
                     <li class="menu_item"><a href="#">support</a></li>
                 </ul>
-                </ul>
             </div>
+            <!-- Button container -->
             <div class="button_container">
+                <!-- Sign in link -->
                 <a class="link" href="">sign in</a>
+                <!-- Get started button -->
                 <button class="button">get started</button>
             </div>
+            <!-- Hamburger menu -->
             <div class="hamburger_menu">
                 <img class="icon" src="asset/Menu.png" alt="hamburger_menu">
+            </div>
         </div>
-      </div>
     </header>
+
+    <!---------------------------
+    // HERO SECTION
+    ----------------------------->
+    <!-- This section represents the hero section of the webpage -->
     <section class="hero">
+        <!-- Background images and elements -->
         <!-- <img class="floating_img_1" src="asset/Coin/BitCoin/Cam2.png" /> -->
         <!-- <img class="floating_img_2" src="asset/Coin/Ethereum/Cam1.png" /> -->
-        <img
-          class="circle_background"
-          src="asset/circles.png"
-          alt="circle background"
-        />
+        <img class="circle_background" src="asset/circles.png" alt="circle background" />
+
+        <!-- Container for the hero section -->
         <div class="container">
-          <div class="hero_container">
-            <div class="hero_content">
-              <h1 class="hero_title">
-                Your all-in-one platform to buy, sell, trade, and earn
-                Cryptocurrencies
-              </h1>
-              <p class="hero_text">
-                Open a free account in minutes right from your phone and make your
-                money go further
-              </p>
-              <div class="hero_newsletter">
-                <input class="input" type="email" placeholder="Enter Address" />
-                <button class="button">Get started</button>
-              </div>
+            <div class="hero_container">
+                <!-- Content of the hero section -->
+                <div class="hero_content">
+                    <!-- Title of the hero section -->
+                    <h1 class="hero_title">
+                        Your all-in-one platform to buy, sell, trade, and earn Cryptocurrencies
+                    </h1>
+                    <!-- Text of the hero section -->
+                    <p class="hero_text">
+                        Open a free account in minutes right from your phone and make your money go further
+                    </p>
+                    <!-- Newsletter subscription form -->
+                    <div class="hero_newsletter">
+                        <input class="input" type="email" placeholder="Enter Address" />
+                        <button class="button">Get started</button>
+                    </div>
+                </div>
+
+                <!-- Currency converter section -->
+                <div class="currency_converter_container">
+                    <div class="currency_converter">
+                        <!-- Title of the currency converter section -->
+                        <h2 class="converter_title">Currency Converter</h2>
+                        <!-- Convert from currency section -->
+                        <div class="convert_from_container">
+                            <label class="" for="">Amount</label>
+                            <div class="convert_from">
+                                <select class="select" name="from_currency">
+                                    <option value="USD">USD</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="JPY">JPY</option>
+                                </select>
+                                <input class="input" type="text" placeholder="Amount" />
+                            </div>
+                        </div>
+                        <!-- Convert to currency section -->
+                        <div class="convert_to_container">
+                            <label class="" for="">converted to</label>
+                            <div class="convert_to">
+                                <select class="select" name="from_currency">
+                                    <option value="USD">USD</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="JPY">JPY</option>
+                                </select>
+                                <input class="input" type="text" placeholder="Amount" />
+                            </div>
+                        </div>
+                        <!-- Convert date section -->
+                        <div class="convert_date_container">
+                            <label class="" for="">Date</label>
+                            <div class="convert_date">
+                                <input class="input" type="date" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-  
-            <div class="currency_converter_container">
-              <div class="currency_converter">
-                <h2 class="converter_title">Currency Converter</h2>
-                <div class="convert_from_container">
-                  <label class="" for="">Amount</label>
-                  <div class="convert_from">
-                    <select class="select" name="from_currency">
-                      <option value="USD">USD</option>
-                      <option value="EUR">EUR</option>
-                      <option value="GBP">GBP</option>
-                      <option value="JPY">JPY</option>
-                    </select>
-                    <input class="input" type="text" placeholder="Amount" />
-                  </div>
-                </div>
-                <div class="convert_to_container">
-                  <label class="" for="">converted to</label>
-                  <div class="convert_to">
-                    <select class="select" name="from_currency">
-                      <option value="USD">USD</option>
-                      <option value="EUR">EUR</option>
-                      <option value="GBP">GBP</option>
-                      <option value="JPY">JPY</option>
-                    </select>
-                    <input class="input" type="text" placeholder="Amount" />
-                  </div>
-                </div>
-                <div class="convert_date_container">
-                  <label class="" for="">Date</label>
-                  <div class="convert_date">
-                    <input class="input" type="date" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-    <section class="patrners">
+    </section>
+
+    <!---------------------------
+    // PARTNERS SECTION
+    ----------------------------->
+    <!-- This section represents the partners section of the webpage -->
+    <section class="partners">
         <div class="container partners_container">
             <div class="partners">
+                <!-- Partner logo -->
                 <div class="partner">
                     <img src="asset/partners/binance logo.png" alt="">
                 </div>
+                <!-- Partner logo -->
                 <div class="partner">
                     <img src="asset/partners/coinbase logo.png" alt="">
                 </div>
+                <!-- Partner logo -->
                 <div class="partner">
                     <img src="asset/partners/bitcoin logo.png" alt="">
                 </div>
+                <!-- Partner logo -->
                 <div class="partner">
                     <img src="asset/partners/tether logo.png" alt="">
                 </div>
+                <!-- Partner logo -->
                 <div class="partner">
                     <img src="asset/partners/bitmex logo.png" alt="">
                 </div>
             </div>
         </div>
     </section>
+
+    <!---------------------------
+    // STATS SECTION
+    ----------------------------->
+    <!-- This section represents the statistics section of the webpage -->
     <section class="stats">
         <div class="stats_container">
+            <!-- Stat group 1 -->
             <div class="stat_group">
                 <h2 class="stat_heading">99k</h2>
                 <p class="stat_text">People have joined</p>
             </div>
+            <!-- Stat group 2 -->
             <div class="stat_group">
                 <h2 class="stat_heading">50k</h2>
                 <p class="stat_text">VVIP users have joined</p>
             </div>
+            <!-- Stat group 3 -->
             <div class="stat_group">
                 <h2 class="stat_heading">100+</h2>
                 <p class="stat_text">Big Companies have joined</p>
@@ -136,18 +175,30 @@
         </div>
     </section>
 
+    <!---------------------------
+    // TRUSTED PLATFORM SECTION
+    ----------------------------->
+    <!-- This section represents the trusted platform section of the webpage -->
     <section class="trusted_platform">
         <div class="container">
           <div class="trusted_platform_container">
+            <!-- Text content of the trusted platform section -->
             <div class="platform_text">
+              <!-- Title of the trusted platform section -->
               <h2 class="trusted_platform_title">
                 The Most Trusted Cryptocurrency Platform
               </h2>
+              <!-- List of platform features -->
               <ul class="platform_features">
+                <!-- Platform feature 1 -->
                 <li class="platform_feature">
+                  <!-- Feature number -->
                   <h3>01</h3>
+                  <!-- Content of feature 1 -->
                   <div class="feature_content">
+                    <!-- Title of feature 1 -->
                     <p class="title">Sync between platforms</p>
+                    <!-- Subtitle of feature 1 -->
                     <p class="sub-title">
                       No matter if you're using our web interface or mobile app —
                       your data is always synced. Just one account for all our
@@ -155,19 +206,29 @@
                     </p>
                   </div>
                 </li>
+                <!-- Platform feature 2 -->
                 <li class="platform_feature">
+                  <!-- Feature number -->
                   <h3>02</h3>
+                  <!-- Content of feature 2 -->
                   <div class="feature_content">
+                    <!-- Title of feature 2 -->
                     <p class="title">More focus, less clutter</p>
+                    <!-- Subtitle of feature 2 -->
                     <p class="sub-title">
                       No ads, just the crypto and content you love.
                     </p>
                   </div>
                 </li>
+                <!-- Platform feature 3 -->
                 <li class="platform_feature">
+                  <!-- Feature number -->
                   <h3>03</h3>
+                  <!-- Content of feature 3 -->
                   <div class="feature_content">
+                    <!-- Title of feature 3 -->
                     <p class="title">Security by default</p>
+                    <!-- Subtitle of feature 3 -->
                     <p class="sub-title">
                       Enable privacy mode and app locking to protect your data.
                     </p>
@@ -175,6 +236,7 @@
                 </li>
               </ul>
             </div>
+            <!-- Image of the trusted platform section -->
             <div class="platform_image">
               <img src="asset/Group 5347.png" alt="Phone 1" class="phone_img" />
             </div>
@@ -182,9 +244,14 @@
         </div>
     </section>
 
+    <!---------------------------
+    // INFO CARDS SECTION
+    ----------------------------->
+    <!-- This section represents the info cards section of the webpage -->
     <section class="info-cards">
       <div class="container">
         <div class="cards-container">
+          <!-- Info card 1: Portfolio -->
           <div class="card card-portfolio">
             <div class="card_image">
               <img src="asset/Group 8749.png" alt="Portfolio" />
@@ -198,6 +265,7 @@
               </p>
             </div>
           </div>
+          <!-- Info card 2: Lightning-Fast Crypto Trading -->
           <div class="card card-lightning">
             <div class="card_image">
               <img
@@ -215,10 +283,10 @@
               </p>
             </div>
           </div>
+          <!-- Info card 3: Security From Day One -->
           <div class="card card-security">
             <div class="card_image">
               <img src="asset/Group 8747.png" alt="Security From Day One" />
-            </div>
             <div class="card_content">
               <h3>Security From Day One</h3>
               <p>
@@ -231,6 +299,10 @@
       </div>
     </section>
 
+    <!---------------------------
+    // GET STARTED SECTION
+    ----------------------------->
+    <!-- This section represents the "Get Started" section of the webpage -->
     <section class="get-started">
         <div class="container">
           <div class="heading">
@@ -241,34 +313,41 @@
             </p>
           </div>
           <div class="steps-container">
+            <!-- Step 1: Sign Up -->
             <div class="step">
               <img src="asset/Frame 219.png" alt="Sign Up" />
               <h3>Sign Up</h3>
               <p>
-                Buy Bitcoin or Ethereum, the securely store it in your wallet or
-                send it on easily to friends
+                Buy Bitcoin or Ethereum, then securely store it in your wallet or
+                easily send it to friends
               </p>
             </div>
+            <!-- Step 2: Fund -->
             <div class="step">
               <img src="asset/Frame 220.png" alt="Fund" />
               <h3>Fund</h3>
               <p>
-                Choose your preferred payment method such as bank transfer, credit
+                Choose your preferred payment method, such as bank transfer, credit
                 or debit card, or top up your wallet.
               </p>
             </div>
+            <!-- Step 3: Buy Crypto -->
             <div class="step">
               <img src="asset/Frame 221.png" alt="Buy Crypto" />
               <h3>Buy Crypto</h3>
               <p>
-                Sign up for free wallet on web, IOS or Android and follow our easy
-                process to set up your profile
+                Sign up for a free wallet on web, iOS, or Android, and follow our easy
+                process to set up your profile.
               </p>
             </div>
           </div>
         </div>
     </section>
 
+    <!---------------------------
+    // TESTIMONIALS SECTION
+    ----------------------------->
+    <!-- Section for displaying testimonials -->
     <section class="testimonials">
         <div class="container">
           <div class="heading">
@@ -386,6 +465,10 @@
         </div>
     </section>
     
+    <!---------------------------
+    // CALL-TO-ACTION SECTION
+    ----------------------------->
+    <!-- Section for the call-to-action -->
     <section class="cta">
         <div class="container cta_container">
             <div class="cta_content">
@@ -394,6 +477,7 @@
                     <button class="button">Get started</button>
                 </div>
             </div>
+            <!-- Images for visual representation -->
             <img class="image_1" src="asset/btc.png" alt="">
             <img class="image_2" src="asset/eth.png" alt="">
             <img class="image_3" src="asset/luna.png" alt="">
@@ -404,9 +488,16 @@
             <img class="image_8" src="asset/Ellipse 310.png" alt="">
         </div>
     </section>
+
+    <!---------------------------
+    // FOOTER SECTION
+    ----------------------------->
+    <!-- Footer section -->
     <footer class="footer">
         <div class="container footer_container">
+            <!-- Footer menu -->
             <div class="footer_menu">
+                <!-- Company column -->
                 <div class="footer_column">
                     <p class="footer_column-heading">Company</p>
                     <ul class="footer_list">
@@ -436,6 +527,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Learn column -->
                 <div class="footer_column">
                     <p class="footer_column-heading">Learn</p>
                     <ul class="footer_list">
@@ -459,6 +551,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Products column -->
                 <div class="footer_column">
                     <p class="footer_column-heading">Products</p>
                     <ul class="footer_list">
@@ -482,6 +575,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Support column -->
                 <div class="footer_column">
                     <p class="footer_column-heading">Support</p>
                     <ul class="footer_list">
@@ -499,6 +593,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Resources column -->
                 <div class="footer_column">
                     <p class="footer_column-heading">Resources</p>
                     <ul class="footer_list">
@@ -517,7 +612,9 @@
                     </ul>
                 </div>
             </div>
+            <!-- Footer divider -->
             <hr class="footer_divider">
+            <!-- Footer info -->
             <div class="footer_info">
                 <h3 class="footer_heading">Did you know you can do more with crypto while on the go?</h3>
                 <img class="footer_logo" src="asset/Logo_white.png" alt="Company Logo">

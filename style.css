@@ -8,6 +8,25 @@
   font-weight: 100 300 700 900;
 }
 
+/* TABLE OF CONTENTS */
+/* 1. UNIVERSAL STYLE */
+/* 2. HEADER SECTION */
+/* 3. HERO SECTION */
+/* 4. PARTNERS SECTION */
+/* 5. STATS SECTION */
+/* 6. TRUSTED PLATFORM */
+/* 7. INFO CARDS */
+/* 8. GET STARTED */
+/* 9. TESTIMONIALS */
+/* 10. CALL TO ACTION */
+/* 11. FOOTER */
+/* 12. RESPONSIVE STYLES FOR TABLET SCREENS */
+/* 13. RESPONSIVE STYLES FOR MOBILE SCREENS */
+
+
+/**************************************
+  1.  UNIVERSAL STYLE
+*************************************/
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +50,15 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 50px;
 }
 
+.container {
+  max-width: 1199px;
+  margin: 0px auto;
+  padding: 0px 16px;
+}
+
+/**************************************
+  2. HEADER SECTION
+*************************************/
 .header {
   height: 80px;
   display: flex;
@@ -39,12 +67,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   background: #fff;
   padding: 16px 4px;
-}
-
-.container {
-  max-width: 1199px;
-  margin: 0px auto;
-  padding: 0px 16px;
 }
 
 .header_container {
@@ -121,9 +143,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**************************************
-  Hero Section
+  2. HERO SECTION
 *************************************/
-
 .hero {
   background-image: linear-gradient(to right, #2752e7, #0b2271);
   min-height: 600px;
@@ -281,6 +302,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
 }
 
+/**************************************
+  4. PARTNERS SECTION
+*************************************/
 .partners {
   padding: 15px;
   background-color: #fff;
@@ -316,6 +340,9 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: scale-down;
 }
 
+/**************************************
+  5. STATS SECTION
+*************************************/
 .stats {
   padding: 40px 10px;
 }
@@ -368,9 +395,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**************************************
-  Trusted Platform
+  6. TRUSTED PLATFORM
 *************************************/
-
 .trusted_platform {
   background-image: linear-gradient(to right, #ffffff 50%, #e8fafe 50%);
 }
@@ -448,9 +474,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**************************************
-  Info Cards
+  7. INFO CARDS
 *************************************/
-
 .info-cards {
   background-color: #d0dbff;
   padding: 120px 0 60px;
@@ -559,9 +584,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**************************************
-  Get Started
+  8. GET STARTED
 *************************************/
-
 .get-started {
   background-color: #d0dbff;
   padding: 60px 0 120px;
@@ -638,9 +662,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**************************************
-  Testimonials
+  9. TESTIMONIALS
 *************************************/
-
 .testimonials {
   background-color: #fff;
   padding: 100px 0;
@@ -713,7 +736,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
 }
 
-
+/**************************************
+  10. CALL TO ACTION
+*************************************/
 .cta {
   padding: 50px 10px;
   background-color: #fff;
@@ -835,6 +860,9 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 10;
 }
 
+/**************************************
+  11. FOOTER
+*************************************/
 .footer {
   padding: 40px 10px;
   background-color: #fff;
@@ -930,7 +958,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/* Responsive Styles */
+/**************************************
+  12. RESPONSIVE STYLES FOR TABLET SCREENS
+*************************************/
 @media screen and (max-width: 768px) {
   .header .menu_container {
     display: none;
@@ -1138,6 +1168,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/**************************************
+  13. RESPONSIVE STYLES FOR MOBILE SCREENS
+*************************************/
 @media screen and (max-width: 480px) {
   .partner {
     flex-basis: 70px;
