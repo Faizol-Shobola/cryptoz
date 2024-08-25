@@ -425,14 +425,26 @@ h1, h2, h3, h4, h5, h6 {
 .platform_features {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 32x;
   list-style: none;
   width: 70%;
 }
 
 .platform_feature {
+  position: relative;
   display: flex;
-  gap: 32px;
+  gap: 5px;
+  flex: 1 1 25%;
+  padding: 25px 0px;
+}
+
+.platform_feature:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #E3E3E3;
 }
 
 .platform_features li h3 {
@@ -466,11 +478,14 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   background: #e8fafe;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .phone_img {
-  width: 75%;
-  object-fit: contain;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 /**************************************
