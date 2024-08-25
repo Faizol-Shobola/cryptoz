@@ -47,7 +47,7 @@ Note: Make sure you have Node.js and npm installed on your machine before procee
 During the implementation, I encountered difficulty in finding a reliable and free currency conversion API that could be used for testing. Many available APIs either required a paid subscription for full access or had limited functionality in their free tier.
 
 #### Solution:
-After extensive research, I eventually found a suitable free API that met the basic requirements for the project.
+After extensive research, I eventually found a suitable free API that met the basic requirements for the project but it wouldn't work for the current date(Todays date) so you need to change the date to the earlier dates.
 
 #### Challenge 2. Implementing Webpack and Babel
 Setting up Webpack and Babel was another significant challenge. These tools were essential for bundling the project and enabling the use of modern JavaScript features. However, configuring them to work seamlessly with environment variables was complex, especially for managing sensitive data like API keys.
