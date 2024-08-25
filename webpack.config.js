@@ -25,7 +25,7 @@ module.exports = {
       },
     ],
   },
-  plugins: [new Dotenv()],
+  plugins: [new Dotenv({ systemvars: true })],
   devServer: {
     static: path.join(__dirname, "dist"),
     compress: true,
