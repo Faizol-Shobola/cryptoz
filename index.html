@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>My First Web Page</title>
+    <title>Crypto Currency Landing Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="asset/font/YukitaSans/YukitaSans-Regular.otf">
-    <link rel="stylesheet" type="text/css" href="asset/font/YukitaSans/YukitaSans-Bold.otf">
+    <link rel="stylesheet" type="text/css" href="asset/font/YukitaSans/YukitaSans-Medium.otf">
 </head>
 <body>
     <header class="header">
-        <div class="header_container">
+        <div class="container header_container">
             <div class="logo_container">
                 <img class="logo" src="asset/Logo.png" alt="">
             </div>
@@ -28,70 +30,74 @@
                 <a class="link" href="">sign in</a>
                 <button class="button">get started</button>
             </div>
+            <div class="hamburger_menu">
+                <img class="icon" src="asset/Menu.png" alt="hamburger_menu">
         </div>
       </div>
     </header>
-    <section class="hero">   
-    </section>
     <section class="hero">
-      <img class="floating_img_1" src="asset/Coin/BitCoin/Cam2.png" />
-      <img class="floating_img_2" src="asset/Coin/Ethereum/Cam1.png" />
-      <img class="circle_background" src="asset/circles.png" alt="circle background">
-      <div class="container">
-        <div class="hero_container">
-          <div class="hero_content">
-            <h1 class="hero_title">
-              Your all-in-one platform to buy, sell, trade, and earn
-              Cryptocurrencies
-            </h1>
-            <p class="hero_text">
-              Open a free account in minutes right from your phone and make your
-              money go further
-            </p>
-            <div class="hero_newsletter">
-              <input class="input" type="email" placeholder="Enter Address" />
-              <button class="button">Get started</button>
+        <!-- <img class="floating_img_1" src="asset/Coin/BitCoin/Cam2.png" /> -->
+        <!-- <img class="floating_img_2" src="asset/Coin/Ethereum/Cam1.png" /> -->
+        <img
+          class="circle_background"
+          src="asset/circles.png"
+          alt="circle background"
+        />
+        <div class="container">
+          <div class="hero_container">
+            <div class="hero_content">
+              <h1 class="hero_title">
+                Your all-in-one platform to buy, sell, trade, and earn
+                Cryptocurrencies
+              </h1>
+              <p class="hero_text">
+                Open a free account in minutes right from your phone and make your
+                money go further
+              </p>
+              <div class="hero_newsletter">
+                <input class="input" type="email" placeholder="Enter Address" />
+                <button class="button">Get started</button>
+              </div>
             </div>
-          </div>
-
-          <div class="currency_converter_container">
-            <div class="currency_converter">
-              <h2 class="converter_title">Currency Converter</h2>
-              <div class="convert_from_container">
-                <label class="" for="">Amount</label>
-                <div class="convert_from">
-                  <select class="select" name="from_currency">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="GBP">GBP</option>
-                    <option value="JPY">JPY</option>
-                  </select>
-                  <input class="input" type="text" placeholder="Amount" />
+  
+            <div class="currency_converter_container">
+              <div class="currency_converter">
+                <h2 class="converter_title">Currency Converter</h2>
+                <div class="convert_from_container">
+                  <label class="" for="">Amount</label>
+                  <div class="convert_from">
+                    <select class="select" name="from_currency">
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="GBP">GBP</option>
+                      <option value="JPY">JPY</option>
+                    </select>
+                    <input class="input" type="text" placeholder="Amount" />
+                  </div>
                 </div>
-              </div>
-              <div class="convert_to_container">
-                <label class="" for="">converted to</label>
-                <div class="convert_to">
-                  <select class="select" name="from_currency">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="GBP">GBP</option>
-                    <option value="JPY">JPY</option>
-                  </select>
-                  <input class="input" type="text" placeholder="Amount" />
+                <div class="convert_to_container">
+                  <label class="" for="">converted to</label>
+                  <div class="convert_to">
+                    <select class="select" name="from_currency">
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="GBP">GBP</option>
+                      <option value="JPY">JPY</option>
+                    </select>
+                    <input class="input" type="text" placeholder="Amount" />
+                  </div>
                 </div>
-              </div>
-              <div class="convert_date_container">
-                <label class="" for="">Date</label>
-                <div class="convert_date">
-                  <input class="input" type="date" />
+                <div class="convert_date_container">
+                  <label class="" for="">Date</label>
+                  <div class="convert_date">
+                    <input class="input" type="date" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     <section class="patrners">
         <div class="container partners_container">
             <div class="partners">
@@ -129,5 +135,395 @@
             </div>
         </div>
     </section>
-  </body>
+
+    <section class="trusted_platform">
+        <div class="container">
+          <div class="trusted_platform_container">
+            <div class="platform_text">
+              <h2 class="trusted_platform_title">
+                The Most Trusted Cryptocurrency Platform
+              </h2>
+              <ul class="platform_features">
+                <li class="platform_feature">
+                  <h3>01</h3>
+                  <div class="feature_content">
+                    <p class="title">Sync between platforms</p>
+                    <p class="sub-title">
+                      No matter if you're using our web interface or mobile app —
+                      your data is always synced. Just one account for all our
+                      services.
+                    </p>
+                  </div>
+                </li>
+                <li class="platform_feature">
+                  <h3>02</h3>
+                  <div class="feature_content">
+                    <p class="title">More focus, less clutter</p>
+                    <p class="sub-title">
+                      No ads, just the crypto and content you love.
+                    </p>
+                  </div>
+                </li>
+                <li class="platform_feature">
+                  <h3>03</h3>
+                  <div class="feature_content">
+                    <p class="title">Security by default</p>
+                    <p class="sub-title">
+                      Enable privacy mode and app locking to protect your data.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="platform_image">
+              <img src="asset/Group 5347.png" alt="Phone 1" class="phone_img" />
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="info-cards">
+      <div class="container">
+        <div class="cards-container">
+          <div class="card card-portfolio">
+            <div class="card_image">
+              <img src="asset/Group 8749.png" alt="Portfolio" />
+            </div>
+            <div class="card_content">
+              <h3>Create portfolio today</h3>
+              <p>
+                Buy and sell popular digital currencies, keep track of them in
+                the one place. Has a variety of features that make it the best
+                place to start trading
+              </p>
+            </div>
+          </div>
+          <div class="card card-lightning">
+            <div class="card_image">
+              <img
+                src="asset/Group 8748.png"
+                alt="Lightning-Fast Crypto Trading"
+              />
+            </div>
+
+            <div class="card_content">
+              <h3>Lightning–Fast Crypto Trading</h3>
+              <p>
+                The Exchange supports USD, EUR, and GBP. Invest in
+                cryptocurrency slowly over time by scheduling buys daily,
+                weekly, or monthly.
+              </p>
+            </div>
+          </div>
+          <div class="card card-security">
+            <div class="card_image">
+              <img src="asset/Group 8747.png" alt="Security From Day One" />
+            </div>
+            <div class="card_content">
+              <h3>Security From Day One</h3>
+              <p>
+                Safety, security and compliance. Buy and sell popular digital
+                currencies, keep track of them in one place.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="get-started">
+        <div class="container">
+          <div class="heading">
+            <h2 class="title">Get Started in Just Few Minutes</h2>
+            <p class="sub-title">
+              Has a variety of features that make it the best place to start
+              trading
+            </p>
+          </div>
+          <div class="steps-container">
+            <div class="step">
+              <img src="asset/Frame 219.png" alt="Sign Up" />
+              <h3>Sign Up</h3>
+              <p>
+                Buy Bitcoin or Ethereum, the securely store it in your wallet or
+                send it on easily to friends
+              </p>
+            </div>
+            <div class="step">
+              <img src="asset/Frame 220.png" alt="Fund" />
+              <h3>Fund</h3>
+              <p>
+                Choose your preferred payment method such as bank transfer, credit
+                or debit card, or top up your wallet.
+              </p>
+            </div>
+            <div class="step">
+              <img src="asset/Frame 221.png" alt="Buy Crypto" />
+              <h3>Buy Crypto</h3>
+              <p>
+                Sign up for free wallet on web, IOS or Android and follow our easy
+                process to set up your profile
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+          <div class="heading">
+            <h2 class="title">What people are saying</h2>
+          </div>
+          <div class="testimonials-masonry">
+            <!-- Testimonial Card 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-heading">
+                <img src="asset/luna.png" alt="Michael Johnson" class="avatar" />
+                <div class="testimony-title">
+                  <h3>Michael Johnson</h3>
+                  <p class="position">Marketing Manager</p>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </p>
+              </div>
+            </div>
+            <!-- Testimonial Card 4 -->
+            <div class="testimonial-card">
+              <div class="testimonial-heading">
+                <img src="asset/Flags.png" alt="Emily Davis" class="avatar" />
+                <div class="testimony-title">
+                  <h3>Emily Davis</h3>
+                  <p class="position">Graphic Designer</p>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat."
+                </p>
+              </div>
+            </div>
+            <!-- Testimonial Card 6 -->
+            <div class="testimonial-card">
+              <div class="testimonial-heading">
+                <img src="asset/Flags.png" alt="Sarah Thompson" class="avatar" />
+                <div class="testimony-title">
+                  <h3>Sarah Thompson</h3>
+                  <p class="position">UX Designer</p>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat."
+                </p>
+              </div>
+            </div>
+            <!-- Testimonial Card 8 -->
+            <div class="testimonial-card">
+              <div class="testimonial-heading">
+                <img src="asset/Flags.png" alt="Olivia Brown" class="avatar" />
+                <div class="testimony-title">
+                  <h3>Olivia Brown</h3>
+                  <p class="position">Content Writer</p>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud."
+                </p>
+              </div>
+            </div>
+            <!-- Testimonial Card 11 -->
+            <div class="testimonial-card">
+              <div class="testimonial-heading">
+                <img src="asset/Flags.png" alt="Emma Davis" class="avatar" />
+                <div class="testimony-title">
+                  <h3>Emma Davis</h3>
+                  <p class="position">Digital Marketer</p>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </p>
+              </div>
+            </div>
+            <!-- Testimonial Card 12 -->
+            <div class="testimonial-card">
+              <div class="testimonial-heading">
+                <img
+                  src="asset/Flags.png"
+                  alt="William Thompson"
+                  class="avatar"
+                />
+                <div class="testimony-title">
+                  <h3>William Thompson</h3>
+                  <p class="position">Frontend Developer</p>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <div class="container cta_container">
+            <div class="cta_content">
+                <h2 class="cta_heading">Take your first step into safe, secure crypto investing</h2>
+                <div class="button_container">
+                    <button class="button">Get started</button>
+                </div>
+            </div>
+            <img class="image_1" src="asset/btc.png" alt="">
+            <img class="image_2" src="asset/eth.png" alt="">
+            <img class="image_3" src="asset/luna.png" alt="">
+            <img class="image_4" src="asset/Titik-titik.png" alt="">
+            <img class="image_5" src="asset/Ellipse 307.png" alt="">
+            <img class="image_6" src="asset/Ellipse 308.png" alt="">
+            <img class="image_7" src="asset/Ellipse 309.png" alt="">
+            <img class="image_8" src="asset/Ellipse 310.png" alt="">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_menu">
+                <div class="footer_column">
+                    <p class="footer_column-heading">Company</p>
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Careers</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Students</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Security</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Trust and Safety</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Newsroom</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Videos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <p class="footer_column-heading">Learn</p>
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="#">What's Trending</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Product News</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Events</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">University</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Research</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Market Updates</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <p class="footer_column-heading">Products</p>
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="#">Stock & Fund</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Cash Card</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Crypto</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Options</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Gold</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Learn Snacks</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <p class="footer_column-heading">Support</p>
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="#">Support Center</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">System  Status</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Areas of Availability</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <p class="footer_column-heading">Resources</p>
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="#">Prices</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Site Widgets</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Tax</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer_divider">
+            <div class="footer_info">
+                <h3 class="footer_heading">Did you know you can do more with crypto while on the go?</h3>
+                <img class="footer_logo" src="asset/Logo_white.png" alt="Company Logo">
+                <p class="footer_text">© Design by Amarachi Iwueze. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
