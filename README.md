@@ -1,6 +1,11 @@
+### Project Name 
+## CryptoZ - A Cryptocurrency landing page
+
 ### Prerequisites
 1. **Node.js**: Ensure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
+
 2. **Git**: Ensure you have Git installed. You can download it from [git-scm.com](https://git-scm.com/).
+
 3. **Abstract API**: Ensure you get your Api key from abstract api before running the project. You can get it from [abstractapi.com/api/exchange-rate-api](https://www.abstractapi.com/api/exchange-rate-api).
 
 
