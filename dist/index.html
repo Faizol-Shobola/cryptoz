@@ -117,6 +117,7 @@
                       id="result"
                       type="text"
                       placeholder="0.0000"
+                      disabled
                     />
                   </div>
                 </div>
@@ -124,7 +125,7 @@
                 <div class="convert_date_container">
                   <label for="date">Date</label>
                   <div class="convert_date">
-                    <input class="input" type="date" value="2024-05-01" />
+                    <input class="input" id="date_field" type="date" />
                   </div>
                 </div>
                 <div class="converter_footer"><p>EUR GBP BTC</p></div>
@@ -636,5 +637,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+# Ignore build artifacts
+build/
+node_modules/
+
+# Ignore editor and IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore log and env files
+*.log
+*.env
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp
+
+# Ignore system files
+.DS_Store
+Thumbs.db
