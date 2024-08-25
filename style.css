@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   .container {
     max-width: 1199px;
     margin: 0px auto;
+    padding: 0px 16px;
   }
   
   .header_container {
@@ -340,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 .cta {
-    padding: 50px 0px;
+    padding: 50px 10px;
     background-color: #fff;
 }
 
@@ -361,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 25px;
     width: 70%;
-    z-index: 10;
+    z-index: 20;
 }
 .cta_heading {
     color: #fff;
@@ -381,14 +382,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     font-weight: 600;
 }
-.cta_images {
-    align-self: flex-end;
-    background-color: #E3E3E3;
-    position: absolute;
-    z-index: 20;
-    overflow: visible;
-}
-.image_1 {
+
+.cta .image_1 {
     position: absolute;
     top: -90px;
     right: 150px;
@@ -397,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 200px;
     z-index: 20;
 }
-.image_2 {
+.cta .image_2 {
     position: absolute;
     margin-top: -130px;
     bottom: 60px;
@@ -407,7 +402,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 150px;
     z-index: 20;
 }
-.image_3 {
+.cta .image_3 {
     position: absolute;
     bottom: 20px;
     right: 230px;
@@ -416,14 +411,14 @@ h1, h2, h3, h4, h5, h6 {
     height: 135px;
     z-index: 20;
 }
-.image_4 {
+.cta .image_4 {
     position: absolute;
     bottom: 0;
     right: 150px;
     object-fit: cover;
     z-index: 10;
 }
-.image_5 {
+.cta .image_5 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -433,21 +428,21 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-right-radius: 20px;
   height: 100%;
 }
-.image_6 {
+.cta .image_6 {
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
   border-top-left-radius: 20px;
 }
-.image_7 {
+.cta .image_7 {
   position: absolute;
   bottom: 0;
   right: 50%;
   transform: translateX(50%);
   object-fit: cover;
 }
-.image_8 {
+.cta .image_8 {
   position: absolute;
   top: 0;
   right: 0;
@@ -465,8 +460,6 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0px auto;
-    max-width: 1199px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -485,6 +478,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer_column {
     display: flex;
+    flex-basis: 150px;
     flex-direction: column;
     gap: 25px;
 }
@@ -537,4 +531,126 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     font-weight: 300;
     color: #fff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .cta {
+    padding: 30px 0px;
+  }
+  .cta_container {
+    padding: 50px 30px;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  .cta_content {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .cta_heading {
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  .button_container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .cta_content button {
+    width: 100%;
+  }
+  .cta .image_1,
+  .cta .image_2,
+  .cta .image_3 {
+    display: none;
+  }
+  .cta .image_4,
+  .cta .image_5,
+  .cta .image_6,
+  .cta .image_7,
+  .cta .image_8 {
+    object-fit: cover;
+  }
+  .cta .image_4 {
+    width: 120px;
+    height: auto;
+    bottom: 0;
+    right: 100px;
+  }
+  .cta .image_5 {
+    width: 921px;
+    height: 921px;
+    top: 40px;
+    right: -530px;
+  }
+  .cta .image_6 {
+    width: 233px;
+    height: 233px;
+    top: -100px;
+    left: -100px;
+  }
+  .cta .image_7 {
+    bottom: -100px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .cta .image_8 {
+    top: -50px;
+    right: -50px;
+  }
+  .footer_container {
+    padding: 40px;
+  }
+  .footer_menu {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer_column {
+    flex-basis: content;
+  }
+
+  .footer_heading {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .footer_item a {
+    font-size: 16px;
+  }
+  
+  .footer_text {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button_container {
+    width: 100%;
+  }
+    
+  .cta_heading {
+    font-size: 30px;
+    text-align: center;
+    line-height: 37.5px;
+  }
+  .cta .image_5 {
+    width: 921px;
+    height: 921px;
+    top: 150px;
+    right: -600px;
+  }
+  .footer_container {
+    padding: 20px;
+  }
+  .footer_heading {
+    font-size: 16px;
+  }
+  
+  .footer_item a {
+    font-size: 14px;
+  }
 }
