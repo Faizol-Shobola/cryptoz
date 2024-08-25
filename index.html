@@ -51,72 +51,86 @@
     ----------------------------->
     <!-- This section represents the hero section of the webpage -->
     <section class="hero">
-        <!-- Background images and elements -->
-        <!-- <img class="floating_img_1" src="asset/Coin/BitCoin/Cam2.png" /> -->
-        <!-- <img class="floating_img_2" src="asset/Coin/Ethereum/Cam1.png" /> -->
         <img class="circle_background" src="asset/circles.png" alt="circle background" />
-
         <!-- Container for the hero section -->
         <div class="container">
-            <div class="hero_container">
-                <!-- Content of the hero section -->
-                <div class="hero_content">
-                    <!-- Title of the hero section -->
-                    <h1 class="hero_title">
-                        Your all-in-one platform to buy, sell, trade, and earn Cryptocurrencies
-                    </h1>
-                    <!-- Text of the hero section -->
-                    <p class="hero_text">
-                        Open a free account in minutes right from your phone and make your money go further
-                    </p>
-                    <!-- Newsletter subscription form -->
-                    <div class="hero_newsletter">
-                        <input class="input" type="email" placeholder="Enter Address" />
-                        <button class="button">Get started</button>
-                    </div>
-                </div>
-
-                <!-- Currency converter section -->
-                <div class="currency_converter_container">
-                    <div class="currency_converter">
-                        <!-- Title of the currency converter section -->
-                        <h2 class="converter_title">Currency Converter</h2>
-                        <!-- Convert from currency section -->
-                        <div class="convert_from_container">
-                            <label class="" for="">Amount</label>
-                            <div class="convert_from">
-                                <select class="select" name="from_currency">
-                                    <option value="USD">USD</option>
-                                    <option value="EUR">EUR</option>
-                                    <option value="GBP">GBP</option>
-                                    <option value="JPY">JPY</option>
-                                </select>
-                                <input class="input" type="text" placeholder="Amount" />
-                            </div>
-                        </div>
-                        <!-- Convert to currency section -->
-                        <div class="convert_to_container">
-                            <label class="" for="">converted to</label>
-                            <div class="convert_to">
-                                <select class="select" name="from_currency">
-                                    <option value="USD">USD</option>
-                                    <option value="EUR">EUR</option>
-                                    <option value="GBP">GBP</option>
-                                    <option value="JPY">JPY</option>
-                                </select>
-                                <input class="input" type="text" placeholder="Amount" />
-                            </div>
-                        </div>
-                        <!-- Convert date section -->
-                        <div class="convert_date_container">
-                            <label class="" for="">Date</label>
-                            <div class="convert_date">
-                                <input class="input" type="date" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="hero_container">
+            <!-- Content of the hero section -->
+            <div class="hero_content">
+              <!-- Title of the hero section -->
+              <h1 class="hero_title">
+                Your all-in-one platform to buy, sell, trade, and earn
+                Cryptocurrencies
+              </h1>
+              <!-- Text of the hero section -->
+              <p class="hero_text">
+                Open a free account in minutes right from your phone and make your
+                money go further
+              </p>
+              <!-- Newsletter subscription form -->
+              <div class="hero_newsletter">
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="Email Address..."
+                />
+                <button class="button">Get started</button>
+              </div>
             </div>
+  
+            <!-- Currency converter section -->
+            <div class="currency_converter_container">
+                <!-- Background images and elements -->
+                <img class="floating_img_1" src="asset/Coin/BitCoin/Cam2.png" />
+                <img class="floating_img_2" src="asset/Coin/Ethereum/Cam1.png" />
+              <div class="currency_converter">
+                <!-- Title of the currency converter section -->
+                <h2 class="converter_title">Currency Converter</h2>
+                <!-- Convert from currency section -->
+                <div class="convert_from_container">
+                  <label for="from_currency">Amount</label>
+                  <div class="convert_from">
+                    <select
+                      class="select"
+                      name="from_currency"
+                      id="from_currency"
+                    >
+                      <option value="USD">USD</option>
+                    </select>
+                    <input
+                      class="input"
+                      id="amount"
+                      type="text"
+                      placeholder="0.0000"
+                    />
+                  </div>
+                </div>
+                <!-- Convert to currency section -->
+                <div class="convert_to_container">
+                  <label for="to_currency">Converted to</label>
+                  <div class="convert_to">
+                    <select class="select" name="to_currency" id="to_currency">
+                      <option value="USD">USD</option>
+                    </select>
+                    <input
+                      class="input"
+                      id="result"
+                      type="text"
+                      placeholder="0.0000"
+                    />
+                  </div>
+                </div>
+                <!-- Convert date section -->
+                <div class="convert_date_container">
+                  <label for="date">Date</label>
+                  <div class="convert_date">
+                    <input class="input" type="date" value="2024-05-01" />
+                  </div>
+                </div>
+                <div class="converter_footer"><p>EUR GBP BTC</p></div>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
