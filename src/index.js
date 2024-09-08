@@ -4,6 +4,9 @@ const toCurrency = document.getElementById("to_currency");
 const amount = document.getElementById("amount");
 const result = document.getElementById("result");
 const dateField = document.getElementById("date_field");
+const hamburgerMenu = document.querySelector('.hamburger_menu');
+const mobileMenuContainer = document.querySelector('.mobile_menu_container');
+
 const API_KEY = process.env.API_KEY;
 
 // Set today's date in the date field
@@ -23,10 +26,24 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-/*****************
- * Fetch live exchange rates and populate select options
- *****************/
+/**********************
+ * Toggle mobile menu
+**********************/
+document.addEventListener('DOMContentLoaded', function() {
+  // Add a click event listener to the hamburger menu
+  hamburgerMenu.addEventListener('click', function() {
+      // Toggle the display of the mobile menu
+      if (mobileMenuContainer.style.display === 'block') {
+          mobileMenuContainer.style.display = 'none';
+      } else {
+          mobileMenuContainer.style.display = 'block';
+      }
+  });
+});
 
+/********************************************************
+ * Fetch live exchange rates and populate select options
+*********************************************************/
 const fetchExchangeRates = (
   endpoint = "https://exchange-rates.abstractapi.com/v1/live"
 ) => {
@@ -52,9 +69,9 @@ const fetchExchangeRates = (
     .catch((error) => console.log(error));
 };
 
-/*****************
+/**************************************************
  * Populate the select options with exchange rates
- *****************/
+ **************************************************/
 const handleSelectPopulate = (exchangeRates) => {
   // Loop through the exchange rates and populate the select options
   for (const currency in exchangeRates) {
@@ -66,9 +83,9 @@ const handleSelectPopulate = (exchangeRates) => {
   }
 };
 
-/*****************
+/*******************
  * Convert currency
- *****************/
+********************/
 const handleConversion = () => {
   const fromCurrencyValue = fromCurrency.value;
   const toCurrencyValue = toCurrency.value;

@@ -146,6 +146,39 @@ h1, h2, h3, h4, h5, h6, label {
   width: 32px;
 }
 
+.mobile_menu_container {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile_menu_item a, .mobile_menu_item button {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.mobile_menu_item button {
+  color: #fff;
+}
+
 /**************************************
   2. HERO SECTION
 *************************************/
@@ -1015,6 +1048,10 @@ h1, h2, h3, h4, h5, h6, label {
   .hamburger_menu {
     display: block;
   }
+  .header .mobile_menu_container {
+    display: none;
+  }
+
   .hero {
     padding: 30px 0;
   }
